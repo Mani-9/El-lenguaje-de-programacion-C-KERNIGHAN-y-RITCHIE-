@@ -1,1 +1,17 @@
+/* nueva linea             =   NL(LF)  \N  */                /* Apostrofo               =    '     V     */
 
+/* Diagonal inversa        =     \     ||  */                /* Comillas                =   II     \"    */
+
+/* tabulador horizontal    =     HT    \t  */                /* Numero octal            =   000    \000  */  
+
+/* Tabulacion vertical     =     VT    \v  */                /* Numero hexadecimal      =   hh|    \xhh  */
+
+/* Interrogación           =     ?     \?  */                /* Nulo                    =          \0    */
+
+/* retroceso               =     BS    \b  */                
+
+/* Regreso de carro        =     CR    \r  */                 
+
+/* Salto de pagina         =     FF    \f  */                
+
+/* Señal audible           =     BEL   \a  */                
