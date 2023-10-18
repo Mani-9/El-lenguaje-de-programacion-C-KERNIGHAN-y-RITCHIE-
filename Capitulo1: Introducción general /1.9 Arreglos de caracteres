@@ -1,3 +1,8 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++/*ilustracion del uso de arreglo de caracteres mediante funciones que la manipulan. */               + 
++/*Este es un programa que lee un congunto de líneas de texto e imprime la linea de mayor longitud */ +
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 #include  <stdio.h>
 #define MAXLINE 1000 /*tamaño máximo de línea de entrada*/
 
