@@ -8,3 +8,13 @@ main()                        /*define una función llamada main
 printf("hola, mundo\n");      /* Imprime; \n representa el carácter nueva línea*/
 
 }
+
+/* EJERCICIO 1-1 Ejecute el programa "hola, mundo" en su sistema. Experimente con la omisión
+de partes del programa, para ver qué mensajes de error se obtienen.*/ 
+/* Al borrar n, corchetes, punto y coma o printf  se obtendrá un error de sintaxis, ya que no obtendrá 
+instruccines para la obtencíon del programa*/
+
+
+
+/* EJERCICIO 1-2 
+
