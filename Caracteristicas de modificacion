@@ -1,1 +1,9 @@
-
+/*%c = unico caracter*/
+/*%d = entero*/
+/*%u = Entero sin signo en base decimal*/
+/*%o = Entero en base octal */
+/*%x = Entero en base heagesimal*/
+/*%e = Un  número real en coma flotante, con exponente */
+/*%f = Un número real en coma flotante, sin exponente */
+/*%s = Una cadena de caracteres */
+/*%p = puntero o dirección de memoria */ 
