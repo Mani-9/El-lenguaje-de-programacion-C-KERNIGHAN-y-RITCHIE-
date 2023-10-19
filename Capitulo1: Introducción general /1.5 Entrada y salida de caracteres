@@ -1,1 +1,47 @@
+/* 5.1 Copia de archivos  */
 
+#include <stdio.h>
+/* Copia la entrada y la salida;  */
+main()
+{
+	int c;
+
+	c = getchar();
+	while (c != EOF) {
+		putchar(c);
+		c = getchar();
+
+	}
+}
++++++++++++++++++++++++++++++++++++++++++++
+
+ /* 5.2 Conteo de caracteres */
+#include <stdio.h>
+/*Cuenta los caracteres de la entrada*/
+main()
+{
+	long nc;
+
+	nc = 0;
+	while (getchar() != EOF)
+	++nc;
+	printf("%ld\n", nc);
+	}
+++++++++++++++++++++++++++++++++++++++++++
+
+/* 5.3 conteo de lineas*/
+#include <stdio.h>
+
+/*Cuentas las líneas de la entrada*/
+
+main()
+{
+	int c, ni;
+
+	ni = 0;
+	while ((c = getchar()) != EOF)
+		if (c == '\n')
+			++ni;
+	printf("%d\n", ni);
+
+}
