@@ -1,4 +1,4 @@
-/* 5.1 Copia de archivos  */
+/* 5.1 Copia de archivos  */                  /*ctrl z windows para terminar el archivo (EOF)*/
 
 #include <stdio.h>
 /* Copia la entrada y la salida;  */
@@ -15,7 +15,7 @@ main()
 }
 +++++++++++++++++++++++++++++++++++++++++++
 
- /* 5.2 Conteo de caracteres */
+ /* 5.2 Conteo de caracteres */             
 #include <stdio.h>
 /*Cuenta los caracteres de la entrada*/
 main()
@@ -44,4 +44,31 @@ main()
 			++ni;
 	printf("%d\n", ni);
 
+}
+++++++++++++++++++++++++++++++++++++++++
+/* 5.4 Conteo de palabras*/                        
+#include <stdio.h>
+
+#define IN 1 /*En una palabra*/
+#define OUT 0 /*Fuera de una palabra*/
+
+/*cuenta lineas, palabras, y caracteresde entrada  */
+main() 
+{
+	int c, ni, nw, nc, state;
+	state = OUT; 
+	ni = nw = nc = c = 0;
+	while ((c = getchar()) != EOF) {
+		++nc;
+		if (c == '\n')
+			++ni;
+		if (c == ' ' || c == '\n' || c == '\t')  
+			state = OUT;
+		else if (state == OUT) {
+			state = IN;
+			++nw;
+		}
+	}
+	printf("%d %d %d\n", ni, nw, nc);
+	return 0;
 }
