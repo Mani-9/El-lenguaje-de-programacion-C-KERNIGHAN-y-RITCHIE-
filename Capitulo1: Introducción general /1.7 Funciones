@@ -1,1 +1,22 @@
+/* Porgrama main para utilizar la funcion power */
+#include <stdio.h>
 
+int power(int m, int n);
+/* Prueba la función power  */
+main()
+{
+	int i;
+	for (i = 0; i < 10; ++i)
+		printf("%d %d %d\n", i, power(2, i), power(3, i));
+	return 0;
+}
+/* Power: Eleva la base a la n isma potencia; n >=0 */
+int power(int base, int n)
+{
+	int i, p;
+	p  =  1;
+	for (i = 1; i <= n; ++i)
+		p = p * base;
+	return p;
+
+}
