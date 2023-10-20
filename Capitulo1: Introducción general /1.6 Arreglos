@@ -1,3 +1,6 @@
+/* Programa para contar el número de ocurrencias de cada digito
+de caracteres espaciadores */
+
 #include <stdio.h>
 
 /* Cuenta dígitos, espacios, blancos, y otros */
