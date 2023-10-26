@@ -1,1 +1,12 @@
+/*programa para imprimir el nombre, sexo edad y estado civil de una*/
+/*persona*/
+/*Pograma numero_1*/
+#include <stdio.h>
+main()
+{
+    printf("Guillermo, Maculino, 33, Casado\n");
+    printf("Precione <ENTER> para terminar\n");
+    getch();
+    
 
+}
