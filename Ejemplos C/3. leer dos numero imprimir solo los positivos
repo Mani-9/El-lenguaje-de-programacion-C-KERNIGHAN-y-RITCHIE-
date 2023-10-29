@@ -1,1 +1,23 @@
+/*Programa para leer doos numeros e imprimir solo los ositivos*/
+/*Programa 10*/
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int num1, num2;
+main()
+{
+	printf("Digite primer numero");
+	scanf("%d", &num1);
+	printf("Digite segundo numero");
+	scanf("%d", &num2);
+	if (num1 > 0)
+		if (num2 > 0)
+			printf("%d    %d\n", num1, num2);
+		else
+			printf("%d\n", num1);
+	else
+		if (num2 > 0)
+			printf("%d\n", num2);
+	printf("Precine <ENTER> para terminar\n ");
+	getch();
 
+}
