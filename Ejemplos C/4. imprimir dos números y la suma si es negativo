@@ -1,1 +1,24 @@
+/*Programa para leer dos numeros e imprimir los dos numeros y la suma*/
+/*si es negativa, si no lo es imprimir los dos numeros*/
+/*Programa numero 15*/
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
 
+int num1, num2, sum;
+main() 
+{
+	printf("Digite el primer numero");
+	scanf("%d", &num1);
+	printf("Digite el segundo numero");
+	scanf("%d", &num2);
+	sum = num1 + num2;
+	if (sum > 0)
+		printf("%d      %d\n", num1, num2);
+	else
+	{
+		printf("la suma es: %d\n", sum);
+		printf("Los numeros son: %d   %d\n", num1, num2);
+	}
+	printf("Precione <ENTER> para terminar\n");
+
+}
