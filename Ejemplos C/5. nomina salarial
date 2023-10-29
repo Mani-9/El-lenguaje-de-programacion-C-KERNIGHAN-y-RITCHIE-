@@ -5,7 +5,7 @@
 #include <stdio.h>
 char nombre[30];
 float salario, reten, salneto;
-main()
+int main()
 {
 	printf("Nombre del empleado ");
 	scanf("%s", &nombre);
