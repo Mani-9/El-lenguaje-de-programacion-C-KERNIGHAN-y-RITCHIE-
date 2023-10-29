@@ -1,0 +1,19 @@
+/*Programa para leer los 20 primeros registros e imprimirlos de un*/
+/*conjunto de datos*/
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int num_reg;
+char nombre[15];
+int main()
+{
+	num_reg = 0;
+	while (num_reg < 20)
+	{
+		printf("Digite nombre:");
+		scanf("%s", nombre);
+		printf("El nombre es: %s\n", nombre);
+		num_reg++;
+	}
+	printf("Precione <ENTER> para terminar\n");
+	return (0);
+}
