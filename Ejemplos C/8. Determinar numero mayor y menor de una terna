@@ -1,0 +1,72 @@
+/*Programa para determinar el numero mayot y el menor de una terna*/
+/*Programa Numero 35*/
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main()
+{
+	long  a, b, c;
+	printf("Digite -1000000 En todas las opciones para terminar\n");
+	printf("Digite el primer numero");
+	scanf("%d", &a);
+	printf("Digite el segundo numero");
+	scanf("%d", &b);
+	printf("Digite el tercer numero");
+	scanf("%d", &c);
+		while(a != -1000000)
+		{
+			if (a == b)
+				printf("El primer y segundo numero son iguales %1d %1d\n", a, b);
+			else
+				if (a == c)
+					printf("El primer y tercer numero son iguales %1d %1d\n", a, b);
+				else
+					if (b == c)
+						printf("El segundo y tercer numero son iguales %1d %1d\n", b, c);
+					else 
+						if (a > b)
+							if (b > c)
+							{
+								printf("El mayor numero es: %d\n", a);
+								printf("El menor numero es: %d\n", c);
+							}
+							else
+								if (a > c)
+								{
+									printf("El mayor numero es: %d\n", a);
+									printf("El menor numero es: %d\n", b);
+								}
+								else
+								{
+									printf("El mayor numero es: %d\n", c);
+									printf("El menor numero es: %d\n", b);
+								}
+						else 
+							if (a > c)
+							{
+								printf("El mayor numero es: %d\n", b);
+								printf("El menor numero es: %d\n", c);
+							}
+							else
+								if (a > c)
+								{
+									printf("El mayor numero es: %d\n", b);
+									printf("El menor numero es: %d\n", a);
+								}
+								else
+								{
+									printf("El mayor numero es: %d\n", c);
+									printf("El menor numero es: %d\n", a);
+								}
+			printf("Digite -1000000 en todas las opciones para terminar \n");
+			printf("Digite el primer numero");
+			scanf("%d", &a);
+			printf("Digite el segundo numero");
+			scanf("%d", &b);
+			printf("Digite el tercer numero");
+			scanf("%d", &c);
+
+	}
+		return 0;
+
+}
