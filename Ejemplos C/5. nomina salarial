@@ -1,1 +1,34 @@
+/*Programa para obtener de un conjunto de datos de nomina el salario*/
+/*neto y la retencion*/
+/*Porgrama Numero 20*/
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+char nombre[30];
+float salario, reten, salneto;
+main()
+{
+	printf("Nombre del empleado ");
+	scanf("%s", &nombre);
+	printf("Salario");
+	scanf("%f", &salario);
+	if (salario >= 1500)
+	{
+		if (salario <= 3000)
+			reten = salario * 0.05;
+		else
+			reten = salario * 0.08;
+		salneto = salario - reten;
 
+	}
+	else
+	{
+		salneto = salario;
+		reten = 0;
+	}
+	printf("nombre;           %s\n", nombre);
+	printf("salario;          %-0.2f\n", salario);
+	printf("retencion;        %-0.2f\n", reten);
+	printf("Salario neto;     %-0.2f\n", salneto);
+	printf("PRECIONE <ENTER>PARA SALIR\n");
+		
+	}
