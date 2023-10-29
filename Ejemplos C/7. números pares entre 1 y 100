@@ -1,0 +1,21 @@
+/*programama para leer los 20 primeros registros e imprimir un*/
+/* conjunto de datos*/
+/*Programa 25*/
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main()
+{
+	int sum, num;
+	sum = 0;
+	num = 2;
+	while (num < 100)
+	{
+		sum = sum + num;
+		num += 2;
+	}
+	printf("La suma es: %5d\n", sum);
+	printf("Presione <ENTER> para terminar \n");
+	return 0;
+
+	}
