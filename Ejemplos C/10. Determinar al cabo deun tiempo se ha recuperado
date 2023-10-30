@@ -1,0 +1,32 @@
+/*Programa para determinar si al cabo de un tiempo se ha recuperado*/
+/* una inversion de un capital*/
+/*programa numero 45*/
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int inversion, cont, infla, ingre;
+	float y, vatota, va;
+	vatota = 0;
+	printf("Digite inversion:");
+	scanf("%d", &inversion);
+	cont = 1;
+	while (cont <= 10)
+	{
+		printf("Digite la inflacion: ");
+		scanf("%d", &infla);
+		printf("Digite el ingreso: ");
+		scanf("%d", &ingre);
+		y = pow(1 + infla, cont);
+		va = ingre / y;
+		vatota+= va;
+		cont++;
+			}
+	if (vatota > inversion)
+		printf("Se recobra la inversion \n");
+	else printf("No se recobra la inversion \n");
+	printf("Presione <ENTER> para terminar \n");
+	return 0;
+
+}
