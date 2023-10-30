@@ -1,0 +1,43 @@
+/*Programa para escoger basketbolista hasta de 18 años. Estatura*/
+/*minima de 1.80 y peso maximo de 80 kilos.*/
+/*Progrma numero 40*/
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main()
+{
+	long ident, edad;
+	float est, pes;
+	printf("Digite cero en todos los datos para terminar \n");
+	printf("Identificacion:");
+	scanf("%d", &ident);
+	printf("Edad:");
+	scanf("%d", &edad);
+	printf("Estatura");
+	scanf("%f", &est);
+	printf("Peso:");
+	scanf("%f", &pes);
+	while (ident != 0)
+	{
+		if (edad <= 18)
+			if (est >= 1.80)
+				if (pes <= 80)
+				{
+					printf("Identificacion:%d\n", ident);
+					printf("Edad:          %d\n", edad);
+					printf("Estatura:      %-0.2f\n", est);
+					printf("Peso:          %-0.2f\n", pes);
+									}
+		printf("Digite cero en todos los datos para terminar \n");
+		printf("Identificacion:");
+		scanf("%d", &ident);
+		printf("Edad:");
+		scanf("%d", &edad);
+		printf("Estatura");
+		scanf("%f", &est);
+		printf("Peso:");
+		scanf("%f", &pes);
+	}
+	return 0;
+
+}
