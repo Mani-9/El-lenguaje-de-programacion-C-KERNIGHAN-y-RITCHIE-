@@ -1,0 +1,42 @@
+/*Programa para calcular la retencion de un trabajo segun*/
+/*determinadas condiciones acumuladas*/
+/*Programa numero 50*/
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int main()
+{
+	long codigo, numhijo;
+	float salaba, torete, reten;
+	printf("Digite cero en todos los datos para terminar\n ");
+	printf("Codigo del empleados:");
+	scanf("%d", &codigo);
+	printf("Numero de hijos:");
+	scanf("%d", &numhijo);
+	printf("Salario basico:");
+	scanf("%f", &salaba);
+	printf("Total de retencion:");
+	scanf("%f", &torete);
+	while (codigo != 0)
+	{
+		if (numhijo > 2)
+			reten = (salaba / 5) - 40 + (numhijo - 2);
+		else
+			reten = salaba/5;
+		torete = torete + reten;
+		printf("codigo:          %d\n", codigo);
+		printf("Retencion:       %-5.2f\n", reten);
+		printf("Total retencion: %-6.2f\n", torete);
+		printf("Digite cero en todos los datos para terminar\n ");
+		printf("Codigo del empleados:");
+		scanf("%d", &codigo);
+		printf("Numero de hijos:");
+		scanf("%d", &numhijo);
+		printf("Salario basico:");
+		scanf("%f", &salaba);
+		printf("Total de retencion:");
+		scanf("%f", &torete);
+
+	}
+	return  0;
+}
+
