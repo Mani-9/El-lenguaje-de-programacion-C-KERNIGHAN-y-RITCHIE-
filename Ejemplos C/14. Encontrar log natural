@@ -1,0 +1,34 @@
+/*Programa para encontrar el logaritmo natural y decimal de un numero*/
+/*Programa numero 65*/
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+	float longnx, longdx, temp;
+	int k, x;
+	printf("digite -1 en x para terminar \n");
+	printf("digite x:");
+	scanf("%d", &x);
+	while (x != -1)
+	{
+		float longnx = 0;
+		k = 1;
+		while (k <= 1000)
+		{
+			temp = pow(((x - 1.0) / x), k);
+			longnx += (1.0 / k) * temp; 
+			k++;
+		}
+		longdx = longnx / 2.30259;
+		printf("El log_natural es: %-5.6f\n", longnx);
+		printf("El log_Decimal es: %-5.6f\n", longdx);
+		printf("Digite -1 en x para terminar\n");
+		printf("digite x:");
+		scanf("%d", &x);
+
+
+	}
+
+}
