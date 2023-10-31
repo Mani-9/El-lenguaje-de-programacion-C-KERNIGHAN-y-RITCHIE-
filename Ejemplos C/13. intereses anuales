@@ -20,7 +20,7 @@ int main()
 	scanf("%f", &tasa);
 	while (cod != 0)
 	{
-		INT = (kap) * (tasa / 100) * ((360 / 360 )- (dia / 360) );
+		INT = (kap) * (tasa / 100.0) * ((360.0 / 360.0 )- (dia / 360.0) );
 		tint = tint + INT;
 		tkap = tkap + kap;
 		ncli = ncli + 1;
@@ -36,13 +36,14 @@ int main()
 		printf("tasa de interes;");
 		scanf("%f", &tasa);
 	}
-	printf("Total de clientes:  %d\n", ncli);
+	printf("Total de clientes: %d\n", ncli);
 	printf("total capital:      %-6.2f\n", tkap);
 	printf("total interes:      %-6.2f\n", tint);
 	printf("Precione <ENTER> para terminar\n");
 	return 0;
 
 }
+
 
 
 
