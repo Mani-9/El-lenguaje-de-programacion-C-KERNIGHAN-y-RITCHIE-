@@ -1,0 +1,48 @@
+/*Programa para calcular los intereses anuales de los clientes de un banco*/
+/*Programa numero 60*/
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int main()
+{
+	long ncli, cod, dia;
+	float tkap, tint, kap, tasa, INT;
+	ncli = 0;
+	tkap = 0;
+	tint = 0;
+	printf("Digite cero en todos los datos para terminar \n");
+	printf("Codigo cliente;");
+	scanf("%d", &cod);
+	printf("capital");
+	scanf("%f", &kap);
+	printf("Dia del calendario comercial; ");
+	scanf("%d", &dia);
+	printf("tasa de interes;");
+	scanf("%f", &tasa);
+	while (cod != 0)
+	{
+		INT = (kap) * (tasa / 100) * ((360 / 360 )- (dia / 360) );
+		tint = tint + INT;
+		tkap = tkap + kap;
+		ncli = ncli + 1;
+		printf("codigo:    %1d\n", cod);
+		printf("Intereses: %-6.2f\n", INT);
+		printf("Digite cero en todos los datos para terminar\n");
+		printf("Codigo cliente");
+		scanf("%d", &cod);
+		printf("Capital:");
+		scanf("%f", &kap);
+		printf("Dia del calendario comercial:");
+		scanf("%d", &dia);
+		printf("tasa de interes;");
+		scanf("%f", &tasa);
+	}
+	printf("Total de clientes:  %d\n", ncli);
+	printf("total capital:      %-6.2f\n", tkap);
+	printf("total interes:      %-6.2f\n", tint);
+	printf("Precione <ENTER> para terminar\n");
+	return 0;
+
+}
+
+
+
