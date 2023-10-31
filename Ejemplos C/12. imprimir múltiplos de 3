@@ -1,0 +1,24 @@
+/*Programa para imprimir los primeros 50 numeros multiplos de 3*/
+/*anteriores al 301*/
+/*Programa numero 55*/
+#include <stdio.h>
+int main()
+{
+	int num, cont;
+	num = 300;
+	cont = 1;
+	while (cont <= 50)
+	{
+		printf("%d\n", num);
+		num -= 3;
+		cont++;
+
+	}
+	printf("precione enter para terminar \n");
+	return 0;
+
+	
+}
+
+
+
