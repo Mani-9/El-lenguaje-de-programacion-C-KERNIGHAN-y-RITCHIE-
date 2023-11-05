@@ -1,0 +1,25 @@
+/*Programa para calcular el numero maximo de sucesion de*/
+/*fibonacci cuya suma no exceda 10000*/
+/*Programa numero 78*/
+
+#include <stdio.h>
+int main()
+{
+	int ter, nt, sum, pri, seg;
+	nt = 1;
+	pri = 0;
+	seg = 1;
+	sum = 1;
+	while (sum <= 10000)
+	{ 
+	ter = pri + seg;
+	sum += ter;
+	pri = seg;
+	seg = ter;
+	nt++;
+	}
+	printf("El numero de terminos es ; %d\n", nt);
+	printf("presione <ENTER> para terminar\n");
+	return 0;
+
+}
